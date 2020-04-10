@@ -1,0 +1,14 @@
+{
+    "name": "built-in-beacons-fe-plus",
+    "version": "0.0.1",
+    "title": "Built in Beacons for FE Plus",
+    "author": "zombieland4942",
+    "contact": "",
+    "homepage": "",
+    "factorio_version": "0.18",
+    "dependencies": [
+        "base >= 0.18",
+        "FactorioExtended-Plus-Machines >= 0.4.3"
+    ],
+    "description": "This mod is an extention to both FE-Plus and Built in Beacons."
+}
