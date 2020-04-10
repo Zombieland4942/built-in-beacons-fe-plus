@@ -24,7 +24,7 @@ local beaconed_fe_assembling_machine_1 = {
                                             },
                                             prerequisites = {"effect-transmission-3", "speed-module-4", "mechanical-engineer-2"},
                                             technology_icon_tint = {r = 0.60, g = 0.60, b = 1},
-                                            tint = {0.05, 0.175 , 1, 0}
+                                            tint = {0.2, 0.2 , 0.6, 0}
                                          }
 
 create_assembling_machine(beaconed_fe_assembling_machine_1)
@@ -45,7 +45,7 @@ local beaconed_fe_assembling_machine_2 = {
                                             },
                                             prerequisites = {"effect-transmission-3", "speed-module-5", "mechanical-engineer-2"},
                                             technology_icon_tint = {r = 0.60, g = 0.60, b = 1},
-                                            tint = {0.05, 0.175 , 1, 0}
+                                            tint = {0.2, 0.2 , 0.7, 0}
                                          }
 
 create_assembling_machine(beaconed_fe_assembling_machine_2)
@@ -66,7 +66,7 @@ local beaconed_fe_assembling_machine_3 = {
                                             },
                                             prerequisites = {"effect-transmission-3", "speed-module-6", "mechanical-engineer-2"},
                                             technology_icon_tint = {r = 0.60, g = 0.60, b = 1},
-                                            tint = {0.05, 0.175 , 1, 0}
+                                            tint = {0, 0 , 0.8, 0}
                                          }
 
 create_assembling_machine(beaconed_fe_assembling_machine_3)
@@ -87,7 +87,7 @@ local beaconed_fe_assembling_machine_4 = {
                                             },
                                             prerequisites = {"effect-transmission-3", "speed-module-6", "mechanical-engineer-2"},
                                             technology_icon_tint = {r = 0.60, g = 0.60, b = 1},
-                                            tint = {0.05, 0.175 , 1, 0}
+                                            tint = {0, 0 , 1, 0}
                                          }
 
 create_assembling_machine(beaconed_fe_assembling_machine_4)

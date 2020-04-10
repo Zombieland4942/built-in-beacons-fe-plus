@@ -18,7 +18,7 @@ data:extend({
     subgroup = "fb-module",
     category = "productivity",
     tier = 4,
-    order = "z-c",
+    order = "l",
     stack_size = 200,
     effect =
     {
@@ -38,7 +38,7 @@ data:extend({
     subgroup = "fb-module",
     category = "productivity",
     tier = 5,
-    order = "z-c",
+    order = "m",
     stack_size = 200,
     effect =
     {
@@ -58,7 +58,7 @@ data:extend({
     subgroup = "fb-module",
     category = "productivity",
     tier = 6,
-    order = "z-c",
+    order = "n",
     stack_size = 200,
     effect =
     {
@@ -86,17 +86,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "rev-productivity-module-4",
-    enabled = false,
-    energy_required = 5,
-    ingredients =
-    {
-	  {"fullspeed-productivity-module-4", 2}
-    },
-    result = "productivity-module-4"
-  },
-  {
-    type = "recipe",
     name = "fullspeed-productivity-module-5",
     enabled = false,
     energy_required = 5,
@@ -106,17 +95,6 @@ data:extend({
     },
     result = "fullspeed-productivity-module-5",
     result_count = 2
-  },
-  {
-    type = "recipe",
-    name = "rev-productivity-module-5",
-    enabled = false,
-    energy_required = 5,
-    ingredients =
-    {
-	  {"fullspeed-productivity-module-5", 2}
-    },
-    result = "productivity-module-5"
   },
   {
     type = "recipe",
@@ -130,17 +108,6 @@ data:extend({
     result = "fullspeed-productivity-module-6",
     result_count = 2
   },
-  {
-    type = "recipe",
-    name = "rev-productivity-module-6",
-    enabled = false,
-    energy_required = 5,
-    ingredients =
-    {
-	  {"fullspeed-productivity-module-6", 2}
-    },
-    result = "productivity-module-6"
-  },
 })
 
 --[[Technology]]--
@@ -151,8 +118,7 @@ data:extend({
     icon_size = 128,
     icon = "__base__/graphics/technology/productivity-module.png",
     effects = {
-      { type = "unlock-recipe", recipe = "fullspeed-productivity-module-4" },
-      { type = "unlock-recipe", recipe = "rev-productivity-module-4" }
+      { type = "unlock-recipe", recipe = "fullspeed-productivity-module-4" }
     },
     unit =
     {
@@ -174,8 +140,7 @@ data:extend({
     icon_size = 128,
     icon = "__base__/graphics/technology/productivity-module.png",
     effects = {
-      { type = "unlock-recipe", recipe = "fullspeed-productivity-module-5" },
-      { type = "unlock-recipe", recipe = "rev-productivity-module-5" }
+      { type = "unlock-recipe", recipe = "fullspeed-productivity-module-5" }
     },
     unit =
     {
@@ -197,8 +162,7 @@ data:extend({
     icon_size = 128,
     icon = "__base__/graphics/technology/productivity-module.png",
     effects = {
-      { type = "unlock-recipe", recipe = "fullspeed-productivity-module-6" },
-      { type = "unlock-recipe", recipe = "rev-productivity-module-6" }
+      { type = "unlock-recipe", recipe = "fullspeed-productivity-module-6" }
     },
     unit =
     {
