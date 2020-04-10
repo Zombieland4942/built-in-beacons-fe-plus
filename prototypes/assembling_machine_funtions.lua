@@ -10,8 +10,8 @@ function create_assembling_machine(args)
     assembling_machine.minable = {mining_time = 0.2, result = args.name}
     assembling_machine.energy_usage = args.energy_usage
     assembling_machine.energy_source = { type = "electric", usage_priority = "secondary-input", emissions_per_minute = args.emissions_per_minute, drain = args.energy_drain }
-    assembling_machine.module_specification.module_slots = 8
-    assembling_machine.allowed_effects = {"productivity","pollution"}
+    assembling_machine.module_specification.module_slots = args.module_slots
+    assembling_machine.allowed_effects = args.allowed_effects
     
     assembling_machine.fluid_boxes[1].secondary_draw_order = 2
     assembling_machine.fluid_boxes[2].secondary_draw_order = 2
