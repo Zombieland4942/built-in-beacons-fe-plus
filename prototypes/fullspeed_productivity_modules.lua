@@ -18,7 +18,7 @@ data:extend({
     subgroup = "fb-module",
     category = "productivity",
     tier = 4,
-    order = "a",
+    order = "z-c",
     stack_size = 200,
     effect =
     {
@@ -38,7 +38,7 @@ data:extend({
     subgroup = "fb-module",
     category = "productivity",
     tier = 5,
-    order = "a",
+    order = "z-c",
     stack_size = 200,
     effect =
     {
@@ -58,7 +58,7 @@ data:extend({
     subgroup = "fb-module",
     category = "productivity",
     tier = 6,
-    order = "a",
+    order = "z-c",
     stack_size = 200,
     effect =
     {

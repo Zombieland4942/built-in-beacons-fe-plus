@@ -1,6 +1,6 @@
 
 function create_assembling_machine(args)
-    local assembling_machine = table.deepcopy(data.raw["assembling-machine"]["assembling-machine-3"])
+    local assembling_machine = table.deepcopy(data.raw["assembling-machine"]["assembling-machine-5"])
     assembling_machine.name = args.name
     assembling_machine.icon = "__built-in-beacons-fe-plus__/graphics/icons/" .. args.name .. ".png"
     assembling_machine.icon_size = 32
@@ -70,7 +70,7 @@ function create_assembling_machine(args)
             icon = "__built-in-beacons-fe-plus__/graphics/icons/" .. args.name .. ".png",
             icon_size = 32,
             subgroup = "fb-machines",
-            order = "b-a",
+            order = "b-b-1",
             place_result = args.name,
             stack_size = 50
         },
