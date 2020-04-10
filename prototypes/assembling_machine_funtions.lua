@@ -12,16 +12,57 @@ function create_assembling_machine(args)
     assembling_machine.energy_source = { type = "electric", usage_priority = "secondary-input", emissions_per_minute = args.emissions_per_minute, drain = args.energy_drain }
     assembling_machine.module_specification.module_slots = 8
     assembling_machine.allowed_effects = {"productivity","pollution"}
-    assembling_machine.animation.layers[1].filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-assembling-machine/" .. args.name .. ".png"
-    assembling_machine.animation.layers[1].hr_version.filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-assembling-machine/hr-" .. args.name .. ".png"
-    for _, direction in pairs({"north", "east", "south", "west"}) do
-        local short = string.upper(string.sub(direction, 1, 1))
-        assembling_machine.fluid_boxes[1].pipe_picture[direction].filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-assembling-machine/".. args.name .. "-pipe-" .. short .. ".png"
-        assembling_machine.fluid_boxes[1].pipe_picture[direction].hr_version.filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-assembling-machine/hr-".. args.name .. "-pipe-" .. short .. ".png"
-        assembling_machine.fluid_boxes[2].pipe_picture[direction].filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-assembling-machine/".. args.name .. "-pipe-" .. short .. ".png"
-        assembling_machine.fluid_boxes[2].pipe_picture[direction].hr_version.filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-assembling-machine/hr-".. args.name .. "-pipe-" .. short .. ".png"
-    end
+    
+    assembling_machine.fluid_boxes[1].secondary_draw_order = 2
+    assembling_machine.fluid_boxes[2].secondary_draw_order = 2
 
+    table.insert(assembling_machine.animation.layers, 
+    {
+      filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-assembling-machine/beaconed-assembling-machine-5-overlay.png",
+      width = 107,
+      height = 109,
+      frame_count = 1,
+      repeat_count = 32,      
+      shift = util.by_pixel(0, 4),
+      animation_speed = 10,
+      hr_version = {
+        filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-assembling-machine/hr-beaconed-assembling-machine-5-overlay.png",
+        priority = "high",
+        width = 214,
+        height = 218,
+        frame_count = 1,
+        repeat_count = 32,
+        shift = util.by_pixel(0, 4),
+        animation_speed = 10,
+        scale = 0.5
+      }
+    })
+    table.insert(assembling_machine.animation.layers, 
+    {
+      filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-assembling-machine/assembling-machine-5-mask.png",
+      width = 78,
+      height = 96,
+      frame_count = 32,
+      line_length = 8,      
+      shift = util.by_pixel(-1, -11),
+      tint = args.tint,
+      blend_mode = "additive",
+      animation_speed = 10,
+      hr_version = {
+        filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-assembling-machine/hr-assembling-machine-5-mask.png",
+        priority = "high",
+        width = 156,
+        height = 192,
+        frame_count = 32,
+        line_length = 8,
+        shift = util.by_pixel(-0.5, -11),
+        tint = args.tint,
+        blend_mode = "additive",
+        animation_speed = 10,
+        scale = 0.5
+      }
+    })
+    
     data:extend({
         {
             type = "item",

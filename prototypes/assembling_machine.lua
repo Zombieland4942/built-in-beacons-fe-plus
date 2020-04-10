@@ -6,7 +6,7 @@
 -- energy_usage                                     17MW        18MW        19MW
 --
 
-require ("assembling_machine_funtionsv2")
+require ("assembling_machine_funtions")
 
 local beaconed_fe_assembling_machine_1 = { 
                                             name = "beaconed-fe-assembling-machine-1",
