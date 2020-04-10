@@ -1,0 +1,1 @@
+require ("func_electric_furnace")
