@@ -76,7 +76,7 @@ data:extend({
     type = "recipe",
     name = "fullspeed-productivity-module-4",
     enabled = false,
-    energy_required = 120,
+    energy_required = 5,
     ingredients =
     {
 	  {"productivity-module-4", 1}
@@ -88,7 +88,7 @@ data:extend({
     type = "recipe",
     name = "rev-productivity-module-4",
     enabled = false,
-    energy_required = 120,
+    energy_required = 5,
     ingredients =
     {
 	  {"fullspeed-productivity-module-4", 2}
@@ -99,7 +99,7 @@ data:extend({
     type = "recipe",
     name = "fullspeed-productivity-module-5",
     enabled = false,
-    energy_required = 120,
+    energy_required = 5,
     ingredients =
     {
 	  {"productivity-module-5", 1}
@@ -111,7 +111,7 @@ data:extend({
     type = "recipe",
     name = "rev-productivity-module-5",
     enabled = false,
-    energy_required = 120,
+    energy_required = 5,
     ingredients =
     {
 	  {"fullspeed-productivity-module-5", 2}
@@ -122,7 +122,7 @@ data:extend({
     type = "recipe",
     name = "fullspeed-productivity-module-6",
     enabled = false,
-    energy_required = 120,
+    energy_required = 5,
     ingredients =
     {
 	  {"productivity-module-6", 1}
@@ -134,7 +134,7 @@ data:extend({
     type = "recipe",
     name = "rev-productivity-module-6",
     enabled = false,
-    energy_required = 120,
+    energy_required = 5,
     ingredients =
     {
 	  {"fullspeed-productivity-module-6", 2}
