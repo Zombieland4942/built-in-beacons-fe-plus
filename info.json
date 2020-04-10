@@ -8,7 +8,8 @@
     "factorio_version": "0.18",
     "dependencies": [
         "base >= 0.18",
-        "FactorioExtended-Plus-Machines >= 0.4.3"
+        "FactorioExtended-Plus-Machines >= 0.4.3",
+        "FactorioExtended-Plus-Module >= 0.1.6"
     ],
     "description": "This mod is an extention to both FE-Plus and Built in Beacons."
 }
