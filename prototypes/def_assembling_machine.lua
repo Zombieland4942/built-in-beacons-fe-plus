@@ -21,7 +21,7 @@ local beaconed_fe_assembling_machine_1 = {
                                                 {"assembling-machine-5", 1},
                                                 {"beacon-mk3", 12},
                                                 {"speed-module-4", 24 }
-                                            }
+                                            },
                                             tint = {0.2, 0.2 , 0.6, 0}
                                          }
 
