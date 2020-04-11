@@ -62,6 +62,7 @@ data:extend({
         icons = {{icon = "__base__/graphics/technology/productivity-module.png", tint = {r = 0.60, g = 0.60, b = 1}}},
         effects = {
             { type = "unlock-recipe", recipe = "beaconed-fe-assembling-machine-3" },
+            { type = "unlock-recipe", recipe = "beaconed-fe-assembling-machine-4" },
             { type = "unlock-recipe", recipe = "beaconed-fe-electric-furnace-3" },
             { type = "unlock-recipe", recipe = "beaconed-fe-electric-mining-drill-3" },
             { type = "unlock-recipe", recipe = "fullspeed-productivity-module-6" },

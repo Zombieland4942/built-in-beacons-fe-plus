@@ -21,9 +21,7 @@ local beaconed_fe_assembling_machine_1 = {
                                                 {"assembling-machine-5", 1},
                                                 {"beacon-mk3", 12},
                                                 {"speed-module-4", 24 }
-                                            },
-                                            prerequisites = {"effect-transmission-3", "speed-module-4", "mechanical-engineer-2"},
-                                            technology_icon_tint = {r = 0.60, g = 0.60, b = 1},
+                                            }
                                             tint = {0.2, 0.2 , 0.6, 0}
                                          }
 
@@ -43,8 +41,6 @@ local beaconed_fe_assembling_machine_2 = {
                                                 {"beacon-mk3", 12},
                                                 {"speed-module-5", 24 }
                                             },
-                                            prerequisites = {"effect-transmission-3", "speed-module-5", "mechanical-engineer-2"},
-                                            technology_icon_tint = {r = 0.60, g = 0.60, b = 1},
                                             tint = {0.2, 0.2 , 0.7, 0}
                                          }
 
@@ -64,8 +60,6 @@ local beaconed_fe_assembling_machine_3 = {
                                                 {"beacon-mk3", 12},
                                                 {"speed-module-6", 24 }
                                             },
-                                            prerequisites = {"effect-transmission-3", "speed-module-6", "mechanical-engineer-2"},
-                                            technology_icon_tint = {r = 0.60, g = 0.60, b = 1},
                                             tint = {0, 0 , 0.8, 0}
                                          }
 
@@ -85,8 +79,6 @@ local beaconed_fe_assembling_machine_4 = {
                                                 {"beacon-mk3", 12},
                                                 {"speed-module-6", 28 }
                                             },
-                                            prerequisites = {"effect-transmission-3", "speed-module-6", "mechanical-engineer-2"},
-                                            technology_icon_tint = {r = 0.60, g = 0.60, b = 1},
                                             tint = {0, 0 , 1, 0}
                                          }
 
