@@ -3,8 +3,8 @@
     
 Item            FE+ Prod    FE+ Polu    Our Prod    Our Polu
 module 4        0.16        0.14        0.08        0.07
-module 5        0.24        0.19        0.12        0.09
-module 6        0.34        0.25        0.17        0.125
+module 5        0.24        0.19        0.12        0.10
+module 6        0.34        0.25        0.17        0.13
 
 ]]--
 data:extend({
@@ -43,7 +43,7 @@ data:extend({
     effect =
     {
       productivity = {bonus = 0.12},
-      pollution = {bonus = 0.09}
+      pollution = {bonus = 0.10}
     },
     limitation = productivity_module_limitation(),
     limitation_message_key = "production-module-usable-only-on-intermediates"

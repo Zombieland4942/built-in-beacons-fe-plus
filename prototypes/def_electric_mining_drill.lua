@@ -2,7 +2,7 @@
 -- electric-furnace                                 md1         md2         md3
 -- module type                                      s4          s5          s6
 -- mining_speed                                     38.9        58.1        82.1
--- energy_source.emissions_per_minute               257         334         432
+-- energy_source.emissions_per_minute               121         135         150
 -- energy_usage                                     14MW        15MW        16MW
 --
 
@@ -13,7 +13,7 @@ local beaconed_fe_electric_mining_drill_1 = {
                                                 mining_speed = 38.9,
                                                 energy_usage = "14MW",
                                                 energy_drain = "7MW",
-                                                emissions_per_minute = 257,
+                                                emissions_per_minute = 121,
                                                 ingredients =
                                                 {
                                                     {"electric-mining-drill-mk3", 1},
@@ -33,7 +33,7 @@ local beaconed_fe_electric_mining_drill_2 = {
                                                 mining_speed = 58.1,
                                                 energy_usage = "15MW",
                                                 energy_drain = "7MW",
-                                                emissions_per_minute = 334,
+                                                emissions_per_minute = 135,
                                                 ingredients =
                                                 {
                                                     {"electric-mining-drill-mk3", 1},
@@ -53,7 +53,7 @@ local beaconed_fe_electric_mining_drill_3 = {
                                                 mining_speed = 82.1,
                                                 energy_usage = "16MW",
                                                 energy_drain = "7MW",
-                                                emissions_per_minute = 432,
+                                                emissions_per_minute = 150,
                                                 ingredients =
                                                 {
                                                     {"electric-mining-drill-mk3", 1},

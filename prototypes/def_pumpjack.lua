@@ -2,7 +2,7 @@
 -- pumpjack                                         pj1         pj2         pj3
 -- module type                                      s4          s5          s6
 -- crafting_speed                                   39.2        58.4        82.4
--- energy_source.emissions_per_minute               302         385         489
+-- energy_source.emissions_per_minute               161         180         200
 -- energy_usage                                     10MW        11MW        12MW
 --
 
@@ -13,7 +13,7 @@ local beaconed_fe_pumpjack_1 = {
                                     mining_speed = 39.2,
                                     energy_usage = "10MW",
                                     energy_drain = "7MW",
-                                    emissions_per_minute = 302,
+                                    emissions_per_minute = 161,
                                     ingredients =
                                     {
                                         {"pumpjack-mk2", 1},
@@ -33,7 +33,7 @@ local beaconed_fe_pumpjack_2 = {
                                     mining_speed = 58.4,
                                     energy_usage = "11MW",
                                     energy_drain = "7MW",
-                                    emissions_per_minute = 385,
+                                    emissions_per_minute = 180,
                                     ingredients =
                                     {
                                         {"pumpjack-mk2", 1},
@@ -53,7 +53,7 @@ local beaconed_fe_pumpjack_3 = {
                                     mining_speed = 82.4,
                                     energy_usage = "12MW",
                                     energy_drain = "7MW",
-                                    emissions_per_minute = 489,
+                                    emissions_per_minute = 200,
                                     ingredients =
                                     {
                                         {"pumpjack-mk2", 1},
