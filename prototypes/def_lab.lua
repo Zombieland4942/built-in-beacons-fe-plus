@@ -20,9 +20,7 @@ local beaconed_fe_lab_1 = {
                                     {"speed-module-4", 24 }
                                 },
                                 tint = {0.2, 0.2, 0.6, 0},
-                                item_order = "e-c-a",                -- Order for the item when opening the Item Menu
-                                tech_order = "a-b-a",                -- Order for the technology
-                                prerequisites = {"effect-transmission-3", "speed-module-4", "mechanical-engineer-2"}
+                                item_order = "e-c-a"
                             }
 
 create_lab(beaconed_fe_lab_1)
@@ -39,9 +37,7 @@ local beaconed_fe_lab_2 = {
                                     {"speed-module-5", 24 }
                                 },
                                 tint = {0.2, 0.2, 0.6, 0},
-                                item_order = "e-c-b",                -- Order for the item when opening the Item Menu
-                                tech_order = "a-b-a",                -- Order for the technology
-                                prerequisites = {"effect-transmission-3", "speed-module-5", "mechanical-engineer-2"}
+                                item_order = "e-c-b"
                             }
 
 create_lab(beaconed_fe_lab_2)
@@ -58,9 +54,7 @@ local beaconed_fe_lab_3 = {
                                     {"speed-module-6", 24 }
                                 },
                                 tint = {0.2, 0.2, 0.6, 0},
-                                item_order = "e-c-c",                -- Order for the item when opening the Item Menu
-                                tech_order = "a-b-a",                -- Order for the technology
-                                prerequisites = {"effect-transmission-3", "speed-module-6", "mechanical-engineer-2"}
+                                item_order = "e-c-c"
                             }
 
 create_lab(beaconed_fe_lab_3)

@@ -21,9 +21,7 @@ local beaconed_fe_electric_furnace_1 = {
                                                 {"speed-module-4", 24 }
                                             },
                                             tint = {0.2, 0.2 , 0.6, 0},
-                                            item_order = "a-b-c",                -- Order for the item when opening the Item Menu
-                                            tech_order = "a-b-a",                -- Order for the technology
-                                            prerequisites = {"effect-transmission-3", "speed-module-4", "mechanical-engineer-2"}
+                                            item_order = "a-b-c"                                      
                                         }
 
 create_electric_furnace(beaconed_fe_electric_furnace_1)
@@ -41,9 +39,7 @@ local beaconed_fe_electric_furnace_2 = {
                                                 {"speed-module-5", 24 }
                                             },
                                             tint = {0.2, 0.2 , 0.7, 0},
-                                            item_order = "a-b-d",                -- Order for the item when opening the Item Menu
-                                            tech_order = "a-b-a",                -- Order for the technology
-                                            prerequisites = {"effect-transmission-3", "speed-module-5", "mechanical-engineer-2"}
+                                            item_order = "a-b-d"
                                         }
 
 create_electric_furnace(beaconed_fe_electric_furnace_2)
@@ -61,9 +57,7 @@ local beaconed_fe_electric_furnace_3 = {
                                                 {"speed-module-6", 24 }
                                             },
                                             tint = {0, 0 , 0.8, 0},
-                                            item_order = "a-b-e",                -- Order for the item when opening the Item Menu
-                                            tech_order = "a-b-a",                -- Order for the technology
-                                            prerequisites = {"effect-transmission-3", "speed-module-6", "mechanical-engineer-2"}
+                                            item_order = "a-b-e"
                                         }
 
 create_electric_furnace(beaconed_fe_electric_furnace_3)
