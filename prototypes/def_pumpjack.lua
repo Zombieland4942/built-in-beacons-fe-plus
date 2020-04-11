@@ -21,7 +21,7 @@ local beaconed_fe_pumpjack_1 = {
                                         {"speed-module-4", 24 }
                                     },
                                     tint = {0.2, 0.2 , 0.6, 0},
-                                    item_order = "a-b-c",                -- Order for the item when opening the Item Menu
+                                    item_order = "c-c-a",                -- Order for the item when opening the Item Menu
                                     tech_order = "a-b-a",                -- Order for the technology
                                     prerequisites = {"effect-transmission-3", "speed-module-4", "mechanical-engineer-2"}
                                 }
@@ -41,7 +41,7 @@ local beaconed_fe_pumpjack_2 = {
                                         {"speed-module-5", 24 }
                                     },
                                     tint = {0.2, 0.2 , 0.7, 0},
-                                    item_order = "a-b-c",                -- Order for the item when opening the Item Menu
+                                    item_order = "c-c-b",                -- Order for the item when opening the Item Menu
                                     tech_order = "a-b-a",                -- Order for the technology
                                     prerequisites = {"effect-transmission-3", "speed-module-4", "mechanical-engineer-2"}
                                 }
@@ -61,7 +61,7 @@ local beaconed_fe_pumpjack_3 = {
                                         {"speed-module-6", 24 }
                                     },
                                     tint = {0, 0 , 0.8, 0},
-                                    item_order = "a-b-c",                -- Order for the item when opening the Item Menu
+                                    item_order = "c-c-c",                -- Order for the item when opening the Item Menu
                                     tech_order = "a-b-a",                -- Order for the technology
                                     prerequisites = {"effect-transmission-3", "speed-module-4", "mechanical-engineer-2"}
                                 }
