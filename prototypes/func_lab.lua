@@ -79,26 +79,6 @@ function create_lab(args)
             enabled = false,
             ingredients = args.ingredients,
             result = args.name
-        },
-        {
-            type = "technology",
-            name = args.name,
-            icon_size = 128,
-            icons = {{icon = "__base__/graphics/technology/automation.png", tint = args.technology_icon_tint}},
-            effects = {{ type = "unlock-recipe", recipe = args.name }},
-            unit =
-            {
-                count = 300,
-                ingredients = {
-                    {"automation-science-pack", 1},
-                    {"logistic-science-pack", 1},
-                    {"chemical-science-pack", 1},
-                    {"production-science-pack", 1}                
-                },
-                time = 30
-            },
-            prerequisites = args.prerequisites,
-            order = args.tech_order
         }      
     })
 

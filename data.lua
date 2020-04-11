@@ -5,3 +5,7 @@ require ("prototypes.def_electric_mining_drill")
 require ("prototypes.def_pumpjack")
 require ("prototypes.def_lab")
 require ("prototypes.def_fullspeed_productivity_module")
+
+
+
+require ("prototypes.def_technology")
