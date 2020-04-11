@@ -2,7 +2,7 @@
 -- assembling-machine                               asm1        asm2        asm3        asm4(All Speed)
 -- module type                                      s4          s5          s6          s6
 -- crafting_speed                                   58.8        87.6        123.6       145.8
--- energy_source.emissions_per_minute               10          11          12          15
+-- emissions_per_minute                             10          11          12          15
 -- energy_usage                                     17MW        18MW        19MW        20MW
 --
 
