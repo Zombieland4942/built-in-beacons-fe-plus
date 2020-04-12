@@ -17,8 +17,8 @@ local beaconed_fe_oil_refinery_1 = {
                                         ingredients =
                                         {
                                             {"oil-refinery-mk3", 1},
-                                            {"beacon-mk3", 16},
-                                            {"speed-module-4", 32 }
+                                            {"beacon-mk3", 10},
+                                            {"speed-module-4", 20 }
                                         },
                                         tint = {0.2, 0.2 , 0.6, 0},
                                         item_order = "c-c-a"
@@ -35,8 +35,8 @@ local beaconed_fe_oil_refinery_2 = {
                                         ingredients =
                                         {
                                             {"oil-refinery-mk3", 1},
-                                            {"beacon-mk3", 16},
-                                            {"speed-module-5", 32 }
+                                            {"beacon-mk3", 10},
+                                            {"speed-module-5", 20 }
                                         },
                                         tint = {0.2, 0.2 , 0.6, 0},
                                         item_order = "c-c-b"
@@ -53,8 +53,8 @@ local beaconed_fe_oil_refinery_3 = {
                                         ingredients =
                                         {
                                             {"oil-refinery-mk3", 1},
-                                            {"beacon-mk3", 16},
-                                            {"speed-module-6", 32 }
+                                            {"beacon-mk3", 10},
+                                            {"speed-module-6", 20 }
                                         },
                                         tint = {0.2, 0.2 , 0.6, 0},
                                         item_order = "c-c-c"

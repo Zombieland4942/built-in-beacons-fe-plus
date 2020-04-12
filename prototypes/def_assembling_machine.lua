@@ -19,8 +19,8 @@ local beaconed_fe_assembling_machine_1 = {
                                             ingredients =
                                             {
                                                 {"assembling-machine-5", 1},
-                                                {"beacon-mk3", 12},
-                                                {"speed-module-4", 24 }
+                                                {"beacon-mk3", 7},
+                                                {"speed-module-4", 14 }
                                             },
                                             tint = {0.2, 0.2 , 0.6, 0}
                                          }
@@ -38,8 +38,8 @@ local beaconed_fe_assembling_machine_2 = {
                                             ingredients =
                                             {
                                                 {"assembling-machine-5", 1},
-                                                {"beacon-mk3", 12},
-                                                {"speed-module-5", 24 }
+                                                {"beacon-mk3", 7},
+                                                {"speed-module-5", 14 }
                                             },
                                             tint = {0.2, 0.2 , 0.7, 0}
                                          }
@@ -57,8 +57,8 @@ local beaconed_fe_assembling_machine_3 = {
                                             ingredients =
                                             {
                                                 {"assembling-machine-5", 1},
-                                                {"beacon-mk3", 12},
-                                                {"speed-module-6", 24 }
+                                                {"beacon-mk3", 7},
+                                                {"speed-module-6", 14 }
                                             },
                                             tint = {0, 0 , 0.8, 0}
                                          }

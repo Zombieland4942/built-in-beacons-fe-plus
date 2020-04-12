@@ -17,8 +17,8 @@ local beaconed_fe_pumpjack_1 = {
                                     ingredients =
                                     {
                                         {"pumpjack-mk2", 1},
-                                        {"beacon-mk3", 12},
-                                        {"speed-module-4", 24 }
+                                        {"beacon-mk3", 7},
+                                        {"speed-module-4", 14 }
                                     },
                                     tint = {0.2, 0.2 , 0.6, 0},
                                     item_order = "c-c-a"
@@ -35,8 +35,8 @@ local beaconed_fe_pumpjack_2 = {
                                     ingredients =
                                     {
                                         {"pumpjack-mk2", 1},
-                                        {"beacon-mk3", 12},
-                                        {"speed-module-5", 24 }
+                                        {"beacon-mk3", 7},
+                                        {"speed-module-5", 14 }
                                     },
                                     tint = {0.2, 0.2 , 0.7, 0},
                                     item_order = "c-c-b"
@@ -53,8 +53,8 @@ local beaconed_fe_pumpjack_3 = {
                                     ingredients =
                                     {
                                         {"pumpjack-mk2", 1},
-                                        {"beacon-mk3", 12},
-                                        {"speed-module-6", 24 }
+                                        {"beacon-mk3", 7},
+                                        {"speed-module-6", 14 }
                                     },
                                     tint = {0, 0 , 0.8, 0},
                                     item_order = "c-c-c"

@@ -17,8 +17,8 @@ local beaconed_fe_electric_mining_drill_1 = {
                                                 ingredients =
                                                 {
                                                     {"electric-mining-drill-mk3", 1},
-                                                    {"beacon-mk3", 12},
-                                                    {"speed-module-4", 24 }
+                                                    {"beacon-mk3", 7},
+                                                    {"speed-module-4", 14 }
                                                 },
                                                 tint = {0.2, 0.2 , 0.6, 0},
                                                 item_order = "c-b-a"
@@ -35,8 +35,8 @@ local beaconed_fe_electric_mining_drill_2 = {
                                                 ingredients =
                                                 {
                                                     {"electric-mining-drill-mk3", 1},
-                                                    {"beacon-mk3", 12},
-                                                    {"speed-module-5", 24 }
+                                                    {"beacon-mk3", 7},
+                                                    {"speed-module-5", 14 }
                                                 },
                                                 tint = {0.2, 0.2 , 0.7, 0},
                                                 item_order = "c-b-b"
@@ -53,8 +53,8 @@ local beaconed_fe_electric_mining_drill_3 = {
                                                 ingredients =
                                                 {
                                                     {"electric-mining-drill-mk3", 1},
-                                                    {"beacon-mk3", 12},
-                                                    {"speed-module-6", 24 }
+                                                    {"beacon-mk3", 7},
+                                                    {"speed-module-6", 14 }
                                                 },
                                                 tint = {0, 0 , 0.8, 0},
                                                 item_order = "c-b-c"
