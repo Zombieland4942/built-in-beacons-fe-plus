@@ -1,9 +1,82 @@
+function beaconedassemblerpipepictures(name)
+  return
+  {
+    north =
+    {
+      filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-assembling-machine/" .. name .. "/assembling-machine-pipe-N.png",
+      priority = "extra-high",
+      width = 35,
+      height = 18,
+      shift = util.by_pixel(2.5, 14),
+      hr_version =
+      {
+        filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-assembling-machine/" .. name .. "/hr-assembling-machine-pipe-N.png",
+        priority = "extra-high",
+        width = 71,
+        height = 38,
+        shift = util.by_pixel(2.25, 13.5),
+        scale = 0.5
+      }
+    },
+    east =
+    {
+      filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-assembling-machine/" .. name .. "/assembling-machine-pipe-E.png",
+      priority = "extra-high",
+      width = 20,
+      height = 38,
+      shift = util.by_pixel(-25, 1),
+      hr_version =
+      {
+        filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-assembling-machine/" .. name .. "/hr-assembling-machine-pipe-E.png",
+        priority = "extra-high",
+        width = 42,
+        height = 76,
+        shift = util.by_pixel(-24.5, 1),
+        scale = 0.5
+      }
+    },
+    south =
+    {
+      filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-assembling-machine/" .. name .. "/assembling-machine-pipe-S.png",
+      priority = "extra-high",
+      width = 44,
+      height = 31,
+      shift = util.by_pixel(0, -31.5),
+      hr_version =
+      {
+        filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-assembling-machine/" .. name .. "/hr-assembling-machine-pipe-S.png",
+        priority = "extra-high",
+        width = 88,
+        height = 61,
+        shift = util.by_pixel(0, -31.25),
+        scale = 0.5
+      }
+    },
+    west =
+    {
+      filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-assembling-machine/" .. name .. "/assembling-machine-pipe-W.png",
+      priority = "extra-high",
+      width = 19,
+      height = 37,
+      shift = util.by_pixel(25.5, 1.5),
+      hr_version =
+      {
+        filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-assembling-machine/" .. name .. "/hr-assembling-machine-pipe-W.png",
+        priority = "extra-high",
+        width = 39,
+        height = 73,
+        shift = util.by_pixel(25.75, 1.25),
+        scale = 0.5
+      }
+    }
+  }
+end
 
 function create_assembling_machine(args)
     local assembling_machine = table.deepcopy(data.raw["assembling-machine"]["assembling-machine-5"])
     assembling_machine.name = args.name
     assembling_machine.icon = "__built-in-beacons-fe-plus__/graphics/icons/" .. args.name .. ".png"
-    assembling_machine.icon_size = 32
+    assembling_machine.icon_size = 64
     assembling_machine.icon_mipmaps = nil
     assembling_machine.max_health = 500
     assembling_machine.crafting_speed = args.crafting_speed
@@ -14,53 +87,30 @@ function create_assembling_machine(args)
     assembling_machine.allowed_effects = args.allowed_effects
     
     assembling_machine.fluid_boxes[1].secondary_draw_order = 2
+    assembling_machine.fluid_boxes[1].pipe_picture = beaconedassemblerpipepictures(args.name)
     assembling_machine.fluid_boxes[2].secondary_draw_order = 2
+    assembling_machine.fluid_boxes[2].pipe_picture = beaconedassemblerpipepictures(args.name)
 
     table.insert(assembling_machine.animation.layers, 
-    {
-      filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-assembling-machine/beaconed-assembling-machine-5-overlay.png",
-      width = 107,
-      height = 109,
-      frame_count = 1,
-      repeat_count = 32,      
-      shift = util.by_pixel(0, 4),
-      animation_speed = 10,
-      hr_version = {
-        filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-assembling-machine/hr-beaconed-assembling-machine-5-overlay.png",
+    {      
+      filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-assembling-machine/" .. args.name .. "/assembling-machine.png",
+      priority = "high",
+      width = 108,
+      height = 119,
+      frame_count = 32,
+      line_length = 8,
+      shift = util.by_pixel(0, -0.5),
+      hr_version =
+      {
+        filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-assembling-machine/" .. args.name .. "/hr-assembling-machine.png",
         priority = "high",
         width = 214,
-        height = 218,
-        frame_count = 1,
-        repeat_count = 32,
-        shift = util.by_pixel(0, 4),
-        animation_speed = 10,
-        scale = 0.5
-      }
-    })
-    table.insert(assembling_machine.animation.layers, 
-    {
-      filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-assembling-machine/assembling-machine-5-mask.png",
-      width = 78,
-      height = 96,
-      frame_count = 32,
-      line_length = 8,      
-      shift = util.by_pixel(-1, -11),
-      tint = args.tint,
-      blend_mode = "additive",
-      animation_speed = 10,
-      hr_version = {
-        filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-assembling-machine/hr-assembling-machine-5-mask.png",
-        priority = "high",
-        width = 156,
-        height = 192,
+        height = 237,
         frame_count = 32,
         line_length = 8,
-        shift = util.by_pixel(-0.5, -11),
-        tint = args.tint,
-        blend_mode = "additive",
-        animation_speed = 10,
+        shift = util.by_pixel(0, -0.75),
         scale = 0.5
-      }
+      }        
     })
     
     data:extend({
@@ -68,7 +118,7 @@ function create_assembling_machine(args)
             type = "item",
             name = args.name,
             icon = "__built-in-beacons-fe-plus__/graphics/icons/" .. args.name .. ".png",
-            icon_size = 32,
+            icon_size = 64,
             subgroup = "fb-machines",
             order = "b-b-1",
             place_result = args.name,
