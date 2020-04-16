@@ -3,7 +3,7 @@ function create_electric_mining_drill(args)
 
     local mining_drill = table.deepcopy(data.raw["mining-drill"]["electric-mining-drill-mk3"])
     mining_drill.name = args.name
-    --mining_drill.icon = "__built-in-beacons-fe-plus__/graphics/icons/" .. args.name .. ".png"
+    mining_drill.icon = "__built-in-beacons-fe-plus__/graphics/icons/" .. args.name .. ".png"
     mining_drill.icon_size = 64
     mining_drill.icon_mipmaps = nil
     mining_drill.minable.result = args.name
@@ -14,224 +14,17 @@ function create_electric_mining_drill(args)
     mining_drill.energy_source = { type = "electric", usage_priority = "secondary-input", emissions_per_minute = args.emissions_per_minute, drain = args.energy_drain }    
     mining_drill.allowed_effects = {"productivity","pollution"}
     
-    mining_drill.animations = {
-        north = {
-        layers = {
-            {
-            priority = "high",
-            filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-N.png",
-            line_length = 8,
-            width = 98,
-            height = 113,
-            frame_count = 64,
-            animation_speed = 2,
-            direction_count = 1,
-            shift = util.by_pixel(0, -8.5),
-            run_mode = "forward-then-backward",
-            hr_version =
-            {
-                priority = "high",
-                filename = "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-N.png",
-                line_length = 8,
-                width = 196,
-                height = 226,
-                frame_count = 64,
-                animation_speed = 2,
-                direction_count = 1,
-                shift = util.by_pixel(0, -8),
-                run_mode = "forward-then-backward",
-                scale = 0.5
-            }
-            },
-            {
-            filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-electric-mining-drill/beaconed-electric-mining-drill-N-overlay.png",
-            width = 93,
-            height = 108,
-            line_length = 8,
-            frame_count = 64,
-            shift = util.by_pixel(0.5, -10),
-            animation_speed = 2,
-            tint = args.tint,
-            run_mode = "forward-then-backward",
-            hr_version = {
-                filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-electric-mining-drill/hr-beaconed-electric-mining-drill-N-overlay.png",
-                priority = "high",
-                width = 185,
-                height = 215,
-                line_length = 8,
-                frame_count = 64,
-                shift = util.by_pixel(0.25, -9.75),
-                animation_speed = 2,
-                tint = args.tint,
-                scale = 0.5,
-                run_mode = "forward-then-backward",
-            }
-            }
-        }
-        },
-        east = {
-        layers = {
-            {
-            priority = "high",
-            filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-E.png",
-            line_length = 8,
-            width = 105,
-            height = 98,
-            frame_count = 64,
-            animation_speed = 2,
-            direction_count = 1,
-            shift = util.by_pixel(3.5, -1),
-            run_mode = "forward-then-backward",
-            hr_version =
-            {
-                priority = "high",
-                filename = "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-E.png",
-                line_length = 8,
-                width = 211,
-                height = 197,
-                frame_count = 64,
-                animation_speed = 2,
-                direction_count = 1,
-                shift = util.by_pixel(3.75, -1.25),
-                run_mode = "forward-then-backward",
-                scale = 0.5
-            }
-            },
-            {
-            filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-electric-mining-drill/beaconed-electric-mining-drill-E-overlay.png",
-            width = 103,
-            height = 89,
-            line_length = 8,
-            frame_count = 64,
-            shift = util.by_pixel(2.5, -1.5),
-            animation_speed = 2,
-            tint = args.tint,
-            run_mode = "forward-then-backward",
-            hr_version = {
-                filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-electric-mining-drill/hr-beaconed-electric-mining-drill-E-overlay.png",
-                priority = "high",
-                width = 205,
-                height = 178,
-                line_length = 8,
-                frame_count = 64,
-                shift = util.by_pixel(2.75, -1.5),
-                animation_speed = 2,
-                tint = args.tint,
-                run_mode = "forward-then-backward",
-                scale = 0.5
-            }
-            }
-        }
-        },
-        south = {
-        layers = {
-            {
-            priority = "high",
-            filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-S.png",
-            line_length = 8,
-            width = 98,
-            height = 109,
-            frame_count = 64,
-            animation_speed = 2,
-            direction_count = 1,
-            shift = util.by_pixel(0, -1.5),
-            run_mode = "forward-then-backward",
-            hr_version =
-            {
-                priority = "high",
-                filename = "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-S.png",
-                line_length = 8,
-                width = 196,
-                height = 219,
-                frame_count = 64,
-                animation_speed = 2,
-                direction_count = 1,
-                shift = util.by_pixel(0, -1.25),
-                run_mode = "forward-then-backward",
-                scale = 0.5
-            }
-            },
-            {
-            filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-electric-mining-drill/beaconed-electric-mining-drill-S-overlay.png",
-            width = 92,
-            height = 105,
-            line_length = 8,
-            frame_count = 64,
-            shift = util.by_pixel(0, -3.5),
-            animation_speed = 2,
-            tint = args.tint,
-            run_mode = "forward-then-backward",
-            hr_version = {
-                filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-electric-mining-drill/hr-beaconed-electric-mining-drill-S-overlay.png",
-                priority = "high",
-                width = 184,
-                height = 208,
-                line_length = 8,
-                frame_count = 64,
-                shift = util.by_pixel(0, -3.5),
-                animation_speed = 2,
-                tint = args.tint,
-                run_mode = "forward-then-backward",
-                scale = 0.5
-            }
-            }
-        }
-        },
-        west = {
-        layers = {
-            {
-            priority = "high",
-            filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-W.png",
-            line_length = 8,
-            width = 105,
-            height = 98,
-            frame_count = 64,
-            animation_speed = 2,
-            direction_count = 1,
-            shift = util.by_pixel(-3.5, -1),
-            run_mode = "forward-then-backward",
-            hr_version =
-            {
-                priority = "high",
-                filename = "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-W.png",
-                line_length = 8,
-                width = 211,
-                height = 197,
-                frame_count = 64,
-                animation_speed = 2,
-                direction_count = 1,
-                shift = util.by_pixel(-3.75, -0.75),
-                run_mode = "forward-then-backward",
-                scale = 0.5
-            }
-            },
-            {
-            filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-electric-mining-drill/beaconed-electric-mining-drill-W-overlay.png",
-            width = 102,
-            height = 90,
-            line_length = 8,
-            frame_count = 64,
-            shift = util.by_pixel(-3, -1),
-            animation_speed = 2,
-            tint = args.tint,
-            run_mode = "forward-then-backward",
-            hr_version = {
-                filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-electric-mining-drill/hr-beaconed-electric-mining-drill-W-overlay.png",
-                priority = "high",
-                width = 204,
-                height = 180,
-                line_length = 8,
-                frame_count = 64,
-                shift = util.by_pixel(-3, -1),
-                animation_speed = 2,
-                tint = args.tint,
-                run_mode = "forward-then-backward",
-                scale = 0.5
-            }
-            }
-        }
-        }
-    }
+    for _, direction in pairs({"north", "east", "south", "west"}) do
+        local short = string.upper(string.sub(direction, 1, 1))
+        -- animations        
+        mining_drill.animations[direction].filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-electric-mining-drill/" .. mining_drill.name .. "/electric-mining-drill-" .. short .. ".png"
+        mining_drill.animations[direction].animation_speed = 2
+        mining_drill.animations[direction].hr_version.filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-electric-mining-drill/" .. mining_drill.name .. "/hr-electric-mining-drill-" .. short .. ".png"
+        mining_drill.animations[direction].hr_version.animation_speed = 2
+        -- input_fluid_patch_sprites
+        mining_drill.input_fluid_patch_sprites[direction].filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-electric-mining-drill/" .. mining_drill.name .. "/electric-mining-drill-" .. short .. "-patch.png"
+        mining_drill.input_fluid_patch_sprites[direction].hr_version.filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-electric-mining-drill/" .. mining_drill.name .. "/hr-electric-mining-drill-" .. short .. "-patch.png"
+    end
 
     data:extend({
         {
