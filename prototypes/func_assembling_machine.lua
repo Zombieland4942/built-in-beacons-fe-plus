@@ -117,8 +117,8 @@ function create_assembling_machine(args)
         {
             type = "item",
             name = args.name,
-            icon = "__built-in-beacons-fe-plus__/graphics/icons/" .. args.name .. ".png",
-            icon_size = 64,
+            icon = assembling_machine.icon,
+            icon_size = assembling_machine.icon_size,
             subgroup = "fb-machines",
             order = "b-b-1",
             place_result = args.name,
