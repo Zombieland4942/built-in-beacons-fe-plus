@@ -8,11 +8,11 @@ function create_pumpjack(args)
     pumpjack.icon_mipmaps = nil
     pumpjack.minable.result = args.name
     pumpjack.max_health = 450
-    pumpjack.module_specification.module_slots = 8
+    pumpjack.module_specification.module_slots = 0
     pumpjack.mining_speed = args.mining_speed
     pumpjack.energy_usage = args.energy_usage
     pumpjack.energy_source = { type = "electric", usage_priority = "secondary-input", emissions_per_minute = args.emissions_per_minute, drain = args.energy_drain }    
-    pumpjack.allowed_effects = {"productivity","pollution"}
+    pumpjack.allowed_effects = { }
    
     pumpjack.animations.north.layers[1].filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-pumpjack/" .. args.name .. "/pumpjack-horsehead.png"
     pumpjack.animations.north.layers[1].animation_speed = 1
