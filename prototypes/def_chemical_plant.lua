@@ -20,7 +20,6 @@ local beaconed_fe_chemical_plant_1 = {
                                             {"beacon-mk3", 7},
                                             {"speed-module-4", 14 }
                                         },
-                                        tint = {0.2, 0.2 , 0.6, 0},
                                         item_order = "d-b-a"
                                      }
 
@@ -38,7 +37,6 @@ local beaconed_fe_chemical_plant_2 = {
                                             {"beacon-mk3", 7},
                                             {"speed-module-5", 14 }
                                         },
-                                        tint = {0.2, 0.2 , 0.6, 0},
                                         item_order = "d-b-b"
                                      }
 
@@ -56,7 +54,6 @@ local beaconed_fe_chemical_plant_3 = {
                                             {"beacon-mk3", 7},
                                             {"speed-module-6", 14 }
                                         },
-                                        tint = {0.2, 0.2 , 0.6, 0},
                                         item_order = "d-b-c"
                                      }
 

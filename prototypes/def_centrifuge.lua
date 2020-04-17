@@ -20,7 +20,6 @@ local beaconed_fe_centrifuge_1 = {
                                         {"beacon-mk3", 7},
                                         {"speed-module-4", 14 }
                                     },
-                                    tint = {0.2, 0.2 , 0.6, 0},
                                     item_order = "e-b-a"
                                 }
 
@@ -38,7 +37,6 @@ local beaconed_fe_centrifuge_2 = {
                                         {"beacon-mk3", 7},
                                         {"speed-module-5", 14 }
                                     },
-                                    tint = {0.2, 0.2 , 0.6, 0},
                                     item_order = "e-b-b"
                                 }
 
@@ -56,7 +54,6 @@ local beaconed_fe_centrifuge_3 = {
                                         {"beacon-mk3", 7},
                                         {"speed-module-6", 14 }
                                     },
-                                    tint = {0.2, 0.2 , 0.6, 0},
                                     item_order = "e-b-c"
                                 }
 

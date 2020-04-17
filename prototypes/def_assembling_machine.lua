@@ -21,8 +21,7 @@ local beaconed_fe_assembling_machine_1 = {
                                                 {"assembling-machine-5", 1},
                                                 {"beacon-mk3", 7},
                                                 {"speed-module-4", 14 }
-                                            },
-                                            tint = {0.2, 0.2 , 0.6, 0}
+                                            }
                                          }
 
 create_assembling_machine(beaconed_fe_assembling_machine_1)
@@ -40,8 +39,7 @@ local beaconed_fe_assembling_machine_2 = {
                                                 {"assembling-machine-5", 1},
                                                 {"beacon-mk3", 7},
                                                 {"speed-module-5", 14 }
-                                            },
-                                            tint = {0.2, 0.2 , 0.7, 0}
+                                            }
                                          }
 
 create_assembling_machine(beaconed_fe_assembling_machine_2)
@@ -59,8 +57,7 @@ local beaconed_fe_assembling_machine_3 = {
                                                 {"assembling-machine-5", 1},
                                                 {"beacon-mk3", 7},
                                                 {"speed-module-6", 14 }
-                                            },
-                                            tint = {0, 0 , 0.8, 0}
+                                            }
                                          }
 
 create_assembling_machine(beaconed_fe_assembling_machine_3)
@@ -78,8 +75,7 @@ local beaconed_fe_assembling_machine_4 = {
                                                 {"assembling-machine-5", 1},
                                                 {"beacon-mk3", 12},
                                                 {"speed-module-6", 28 }
-                                            },
-                                            tint = {0, 0 , 1, 0}
+                                            }
                                          }
 
 create_assembling_machine(beaconed_fe_assembling_machine_4)
