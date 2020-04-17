@@ -2,8 +2,8 @@ function create_refinery(args)
 
     local refinery = table.deepcopy(data.raw["assembling-machine"]["oil-refinery-mk3"])
     refinery.name = args.name
-    --refinery.icon = "__built-in-beacons-fe-plus__/graphics/icons/" .. args.name .. ".png"
-    --refinery.icon_size = 32
+    refinery.icon = "__built-in-beacons-fe-plus__/graphics/icons/" .. args.name .. ".png"
+    refinery.icon_size = 64
     refinery.icon_mipmaps = nil
     refinery.minable.result = args.name
     refinery.max_health = 400
@@ -13,6 +13,11 @@ function create_refinery(args)
     refinery.energy_source = { type = "electric", usage_priority = "secondary-input", emissions_per_minute = args.emissions_per_minute, drain = args.energy_drain }    
     refinery.allowed_effects = {"productivity","pollution"}
     
+    for _, direction in pairs({"north", "east", "south", "west"}) do
+        refinery.animation[direction].layers[1].filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-oil-refinery/" .. args.name .. "/oil-refinery.png"
+        refinery.animation[direction].layers[1].hr_version.filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-oil-refinery/" .. args.name .. "/hr-oil-refinery.png"
+    end
+
     data:extend({
         {
             type = "item",
