@@ -18,7 +18,7 @@ local beaconed_fe_pumpjack_1 = {
                                     {
                                         {"pumpjack-mk2", 1},
                                         {"beacon-mk3", 7},
-                                        {"speed-module-4", 14 }
+                                        {"speed-module-4", 18 }
                                     },
                                     item_order = "c-c-a"
                                 }
@@ -35,7 +35,7 @@ local beaconed_fe_pumpjack_2 = {
                                     {
                                         {"pumpjack-mk2", 1},
                                         {"beacon-mk3", 7},
-                                        {"speed-module-5", 14 }
+                                        {"speed-module-5", 18 }
                                     },
                                     item_order = "c-c-b"
                                 }
@@ -52,7 +52,7 @@ local beaconed_fe_pumpjack_3 = {
                                     {
                                         {"pumpjack-mk2", 1},
                                         {"beacon-mk3", 7},
-                                        {"speed-module-6", 14 }
+                                        {"speed-module-6", 18 }
                                     },
                                     item_order = "c-c-c"
                                 }

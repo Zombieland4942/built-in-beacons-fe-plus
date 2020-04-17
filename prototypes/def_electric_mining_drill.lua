@@ -18,7 +18,7 @@ local beaconed_fe_electric_mining_drill_1 = {
                                                 {
                                                     {"electric-mining-drill-mk3", 1},
                                                     {"beacon-mk3", 7},
-                                                    {"speed-module-4", 14 }
+                                                    {"speed-module-4", 19 }
                                                 },
                                                 item_order = "c-b-a"
                                             }
@@ -35,7 +35,7 @@ local beaconed_fe_electric_mining_drill_2 = {
                                                 {
                                                     {"electric-mining-drill-mk3", 1},
                                                     {"beacon-mk3", 7},
-                                                    {"speed-module-5", 14 }
+                                                    {"speed-module-5", 19 }
                                                 },
                                                 item_order = "c-b-b"
                                             }
@@ -52,7 +52,7 @@ local beaconed_fe_electric_mining_drill_3 = {
                                                 {
                                                     {"electric-mining-drill-mk3", 1},
                                                     {"beacon-mk3", 7},
-                                                    {"speed-module-6", 14 }
+                                                    {"speed-module-6", 19 }
                                                 },
                                                 item_order = "c-b-c"
                                             }
