@@ -16,3 +16,5 @@ Features:
 
 Other notes:
 - Mining drills and pumpjacks assume you are putting speed modules in them, and have no module slots
+
+![Tier 1 Machines](/other files/tier-1-display.png)
