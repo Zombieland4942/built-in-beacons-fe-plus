@@ -3,8 +3,8 @@ function create_pumpjack(args)
 
     local pumpjack = table.deepcopy(data.raw["mining-drill"]["pumpjack-mk2"])
     pumpjack.name = args.name
-    --pumpjack.icon = "__built-in-beacons-fe-plus__/graphics/icons/" .. args.name .. ".png"
-    pumpjack.icon_size = 32
+    pumpjack.icon = "__built-in-beacons-fe-plus__/graphics/icons/" .. args.name .. ".png"
+    pumpjack.icon_size = 64
     pumpjack.icon_mipmaps = nil
     pumpjack.minable.result = args.name
     pumpjack.max_health = 450
@@ -13,33 +13,11 @@ function create_pumpjack(args)
     pumpjack.energy_usage = args.energy_usage
     pumpjack.energy_source = { type = "electric", usage_priority = "secondary-input", emissions_per_minute = args.emissions_per_minute, drain = args.energy_drain }    
     pumpjack.allowed_effects = {"productivity","pollution"}
-    
-    table.insert(pumpjack.animations.north.layers,
-    {
-        priority = "high",
-        filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-pumpjack/pumpjack-horsehead-mask.png",
-        line_length = 8,
-        width = 104,
-        height = 102,
-        frame_count = 40,
-        shift = util.by_pixel(-4, -24),
-        --blend_mode = "additive",
-        tint = args.tint,
-        animation_speed = 0.7,
-        hr_version =
-        {
-        priority = "high",
-        filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-pumpjack/hr-pumpjack-horsehead-mask.png",
-        animation_speed = 0.7,
-        scale = 0.5,
-        line_length = 8,
-        width = 206,
-        height = 202,
-        frame_count = 40,
-        shift = util.by_pixel(-4, -24),
-        tint = args.tint,
-        }
-    })
+   
+    pumpjack.animations.north.layers[1].filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-pumpjack/" .. args.name .. "/pumpjack-horsehead.png"
+    pumpjack.animations.north.layers[1].animation_speed = 1
+    pumpjack.animations.north.layers[1].hr_version.filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-pumpjack/" .. args.name .. "/hr-pumpjack-horsehead.png"
+    pumpjack.animations.north.layers[1].hr_version.animation_speed = 1
 
     data:extend({
         {
