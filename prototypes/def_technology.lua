@@ -5,7 +5,7 @@ data:extend({
         type = "technology",
         name = "tech-fullspeed-fe-productivity-module-1",
         icon_size = 128,
-        icons = {{icon = "__base__/graphics/technology/productivity-module.png", tint = {r = 0.60, g = 0.60, b = 1}}},
+        icons = {{icon = "__built-in-beacons-fe-plus__/graphics/technology/tech1.png"}},
         effects = {
             { type = "unlock-recipe", recipe = "beaconed-fe-assembling-machine-1" },
             { type = "unlock-recipe", recipe = "beaconed-fe-electric-furnace-1" },
@@ -35,7 +35,7 @@ data:extend({
         type = "technology",
         name = "tech-fullspeed-fe-productivity-module-2",
         icon_size = 128,
-        icons = {{icon = "__base__/graphics/technology/productivity-module.png", tint = {r = 0.60, g = 0.60, b = 1}}},
+        icons = {{icon = "__built-in-beacons-fe-plus__/graphics/technology/tech2.png"}},
         effects = {
             { type = "unlock-recipe", recipe = "beaconed-fe-assembling-machine-2" },
             { type = "unlock-recipe", recipe = "beaconed-fe-electric-furnace-2" },
@@ -65,7 +65,7 @@ data:extend({
         type = "technology",
         name = "tech-fullspeed-fe-productivity-module-3",
         icon_size = 128,
-        icons = {{icon = "__base__/graphics/technology/productivity-module.png", tint = {r = 0.60, g = 0.60, b = 1}}},
+        icons = {{icon = "__built-in-beacons-fe-plus__/graphics/technology/tech3.png"}},
         effects = {
             { type = "unlock-recipe", recipe = "beaconed-fe-assembling-machine-3" },
             { type = "unlock-recipe", recipe = "beaconed-fe-assembling-machine-4" },
