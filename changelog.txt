@@ -15,5 +15,9 @@ Date: 18/04/2020
     - Tuned emissions for all Electric Furnaces
     - Tuned power consumption for all Electric Mining Drills
     - Tuned emissions for all Electric Mining Drills
-    - Tuned power consumption for all Oil Refinery
-    - Tuned emissions for all Oil Refinery
+    - Tuned power consumption for all Oil Refinerys
+    - Tuned emissions for all Oil Refinerys
+    - Tuned power consumption for all Labs
+    - Tuned emissions for all Labs
+    - Tuned power consumption for all Pumpjacks
+    - Tuned emissions for all Pumpjacks

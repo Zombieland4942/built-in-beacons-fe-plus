@@ -11,9 +11,8 @@ require ("func_pumpjack")
 local beaconed_fe_pumpjack_1 = { 
                                     name = "beaconed-fe-pumpjack-1",  
                                     mining_speed = 46.8,
-                                    energy_usage = "10MW",
-                                    energy_drain = "7MW",
-                                    emissions_per_minute = 187,
+                                    energy_usage = "13.31MW",
+                                    emissions_per_minute = 193,
                                     ingredients =
                                     {
                                         {"pumpjack-mk2", 1},
@@ -28,9 +27,8 @@ create_pumpjack(beaconed_fe_pumpjack_1)
 local beaconed_fe_pumpjack_2 = { 
                                     name = "beaconed-fe-pumpjack-2",  
                                     mining_speed = 69.2,
-                                    energy_usage = "11MW",
-                                    energy_drain = "7MW",
-                                    emissions_per_minute = 209,
+                                    energy_usage = "15.07MW",
+                                    emissions_per_minute = 219,
                                     ingredients =
                                     {
                                         {"pumpjack-mk2", 1},
@@ -45,9 +43,8 @@ create_pumpjack(beaconed_fe_pumpjack_2)
 local beaconed_fe_pumpjack_3 = { 
                                     name = "beaconed-fe-pumpjack-3",  
                                     mining_speed = 97.2,
-                                    energy_usage = "12MW",
-                                    energy_drain = "7MW",
-                                    emissions_per_minute = 232,
+                                    energy_usage = "16.83MW",
+                                    emissions_per_minute = 244,
                                     ingredients =
                                     {
                                         {"pumpjack-mk2", 1},

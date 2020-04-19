@@ -12,7 +12,6 @@ local beaconed_fe_lab_1 = {
                                 name = "beaconed-fe-lab-1",  
                                 researching_speed = 39.2,
                                 energy_usage = "10MW",
-                                energy_drain = "7MW",
                                 ingredients =
                                 {
                                     {"lab-mk3", 1},
@@ -28,7 +27,6 @@ local beaconed_fe_lab_2 = {
                                 name = "beaconed-fe-lab-2",  
                                 researching_speed = 58.4,
                                 energy_usage = "10MW",
-                                energy_drain = "7MW",
                                 ingredients =
                                 {
                                     {"lab-mk3", 1},
@@ -44,7 +42,6 @@ local beaconed_fe_lab_3 = {
                                 name = "beaconed-fe-lab-3",  
                                 researching_speed = 82.4,
                                 energy_usage = "10MW",
-                                energy_drain = "7MW",
                                 ingredients =
                                 {
                                     {"lab-mk3", 1},
