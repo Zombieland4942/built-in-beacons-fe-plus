@@ -7,11 +7,10 @@ function create_lab(args)
     lab.icon_size = 64
     lab.icon_mipmaps = nil
     lab.minable.result = args.name
-    lab.max_health = 450
     lab.module_specification.module_slots = 8
     lab.researching_speed = args.researching_speed
     lab.energy_usage = args.energy_usage
-    lab.energy_source = { type = "electric", usage_priority = "secondary-input", drain = args.energy_drain }    
+    lab.energy_source = { type = "electric", usage_priority = "secondary-input", drain = "6.7MW" }    
     lab.allowed_effects = {"productivity","pollution"}
     
     lab.on_animation.layers[1].filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-lab/" .. args.name .. "/lab.png"

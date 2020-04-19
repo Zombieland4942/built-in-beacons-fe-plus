@@ -78,13 +78,12 @@ function create_assembling_machine(args)
     assembling_machine.icon = "__built-in-beacons-fe-plus__/graphics/icons/" .. args.name .. ".png"
     assembling_machine.icon_size = 64
     assembling_machine.icon_mipmaps = nil
-    assembling_machine.max_health = 500
     assembling_machine.crafting_speed = args.crafting_speed
     assembling_machine.minable = {mining_time = 0.2, result = args.name}
     assembling_machine.energy_usage = args.energy_usage
-    assembling_machine.energy_source = { type = "electric", usage_priority = "secondary-input", emissions_per_minute = args.emissions_per_minute, drain = args.energy_drain }
-    assembling_machine.module_specification.module_slots = args.module_slots
-    assembling_machine.allowed_effects = args.allowed_effects
+    assembling_machine.energy_source = { type = "electric", usage_priority = "secondary-input", emissions_per_minute = args.emissions_per_minute, drain = "6.7MW" }
+    assembling_machine.module_specification.module_slots = args.module_slots or 8
+    assembling_machine.allowed_effects = args.allowed_effects or {"productivity","pollution"}
     
     assembling_machine.fluid_boxes[1].secondary_draw_order = 2
     assembling_machine.fluid_boxes[1].pipe_picture = beaconedassemblerpipepictures(args.name)

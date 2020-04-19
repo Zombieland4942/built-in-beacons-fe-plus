@@ -7,11 +7,10 @@ function create_electric_mining_drill(args)
     mining_drill.icon_size = 64
     mining_drill.icon_mipmaps = nil
     mining_drill.minable.result = args.name
-    mining_drill.max_health = 450
     mining_drill.module_specification.module_slots = 0
     mining_drill.mining_speed = args.mining_speed
     mining_drill.energy_usage = args.energy_usage
-    mining_drill.energy_source = { type = "electric", usage_priority = "secondary-input", emissions_per_minute = args.emissions_per_minute, drain = args.energy_drain }    
+    mining_drill.energy_source = { type = "electric", usage_priority = "secondary-input", emissions_per_minute = args.emissions_per_minute, drain = "6.7MW" }    
     mining_drill.allowed_effects = {}
     
     for _, direction in pairs({"north", "east", "south", "west"}) do

@@ -6,11 +6,10 @@ function create_refinery(args)
     refinery.icon_size = 64
     refinery.icon_mipmaps = nil
     refinery.minable.result = args.name
-    refinery.max_health = 400
     refinery.module_specification.module_slots = 8
     refinery.crafting_speed = args.crafting_speed
     refinery.energy_usage = args.energy_usage
-    refinery.energy_source = { type = "electric", usage_priority = "secondary-input", emissions_per_minute = args.emissions_per_minute, drain = args.energy_drain }    
+    refinery.energy_source = { type = "electric", usage_priority = "secondary-input", emissions_per_minute = args.emissions_per_minute, drain = "9.8MW" }    
     refinery.allowed_effects = {"productivity","pollution"}
     
     for _, direction in pairs({"north", "east", "south", "west"}) do

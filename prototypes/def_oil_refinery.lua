@@ -2,8 +2,8 @@
 -- refinery                                         r1          r2          r3
 -- module type                                      s4          s5          s6
 -- crafting_speed                                   104         155.2       219.2
--- energy_source.emissions_per_minute               106         119         132
--- energy_usage                                     22MW        23MW        24MW
+-- energy_source.emissions_per_minute               148         167.2       186.4
+-- energy_usage                                     13.31MW     15.07MW     16.83MW
 --
 
 require ("func_oil_refinery")
@@ -11,9 +11,8 @@ require ("func_oil_refinery")
 local beaconed_fe_oil_refinery_1 = { 
                                         name = "beaconed-fe-oil-refinery-1",  
                                         crafting_speed = 104,
-                                        energy_usage = "22MW",
-                                        energy_drain = "10MW",
-                                        emissions_per_minute = 106,
+                                        energy_usage = "13.31MW",
+                                        emissions_per_minute = 148,
                                         ingredients =
                                         {
                                             {"oil-refinery-mk3", 1},
@@ -28,9 +27,8 @@ create_refinery(beaconed_fe_oil_refinery_1)
 local beaconed_fe_oil_refinery_2 = { 
                                         name = "beaconed-fe-oil-refinery-2",  
                                         crafting_speed = 155.2,
-                                        energy_usage = "23MW",
-                                        energy_drain = "10MW",
-                                        emissions_per_minute = 119,
+                                        energy_usage = "15.07MW",
+                                        emissions_per_minute = 167.2,
                                         ingredients =
                                         {
                                             {"oil-refinery-mk3", 1},
@@ -45,9 +43,8 @@ create_refinery(beaconed_fe_oil_refinery_2)
 local beaconed_fe_oil_refinery_3 = { 
                                         name = "beaconed-fe-oil-refinery-3",  
                                         crafting_speed = 219.2,
-                                        energy_usage = "24MW",
-                                        energy_drain = "10MW",
-                                        emissions_per_minute = 132,
+                                        energy_usage = "16.83MW",
+                                        emissions_per_minute = 186.4,
                                         ingredients =
                                         {
                                             {"oil-refinery-mk3", 1},

@@ -1,0 +1,24 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 19/04/2020
+  Changes:
+    - Added Changelog
+    - Cleaned up code
+    - Tuned power consumption of all Assemblers
+    - Tuned emissions for all Assemblers
+    - Corrected module and beacon count for full speed 6 assembler.
+    - Tuned power consumption for all Centrifuges
+    - Tuned emissions for all Centrifuges
+    - Tuned power consumption for all Chemical Plants
+    - Tuned emissions for all Chemical Plants
+    - Tuned power consumption for all Electric Furnaces
+    - Tuned emissions for all Electric Furnaces
+    - Tuned power consumption for all Electric Mining Drills
+    - Tuned emissions for all Electric Mining Drills
+    - Tuned power consumption for all Oil Refinerys
+    - Tuned emissions for all Oil Refinerys
+    - Tuned power consumption for all Labs
+    - Tuned emissions for all Labs
+    - Tuned power consumption for all Pumpjacks
+    - Tuned emissions for all Pumpjacks
+    - Updated Electric Mining Drill Teir 3(speed 6) to be more visable
