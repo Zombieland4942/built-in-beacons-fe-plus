@@ -2,8 +2,8 @@
 -- pumpjack                                         pj1         pj2         pj3
 -- module type                                      s4          s5          s6
 -- crafting_speed                                   46.8        69.2        97.2
--- energy_source.emissions_per_minute               187         209         232
--- energy_usage                                     10MW        11MW        12MW
+-- energy_source.emissions_per_minute               193         219         244
+-- energy_usage                                     13.31MW     15.07MW     16.83MW
 --
 
 require ("func_pumpjack")
