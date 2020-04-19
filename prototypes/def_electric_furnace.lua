@@ -2,8 +2,8 @@
 -- electric-furnace                                 ef1         ef2         ef3
 -- module type                                      s4          s5          s6
 -- crafting_speed                                   78.4        116.8       164.8
--- energy_source.emissions_per_minute               37.75       48.22       61.2
--- energy_usage                                     12MW        13MW        14MW
+-- energy_source.emissions_per_minute               12.1        13.7        16.3
+-- energy_usage                                     13.3MW      15MW        16.8MW
 --
 
 require ("func_electric_furnace")
@@ -11,9 +11,8 @@ require ("func_electric_furnace")
 local beaconed_fe_electric_furnace_1 = { 
                                             name = "beaconed-fe-electric-furnace-1",  
                                             crafting_speed = 78.4,
-                                            energy_usage = "12MW",
-                                            energy_drain = "7MW",
-                                            emissions_per_minute = 37.75,
+                                            energy_usage = "13.3MW",
+                                            emissions_per_minute = 12.1,
                                             ingredients =
                                             {
                                                 {"electric-furnace-mk3", 1},
@@ -28,9 +27,8 @@ create_electric_furnace(beaconed_fe_electric_furnace_1)
 local beaconed_fe_electric_furnace_2 = { 
                                             name = "beaconed-fe-electric-furnace-2",  
                                             crafting_speed = 116.8,
-                                            energy_usage = "13MW",
-                                            energy_drain = "7MW",
-                                            emissions_per_minute = 48.22,
+                                            energy_usage = "15MW",
+                                            emissions_per_minute = 13.7,
                                             ingredients =
                                             {
                                                 {"electric-furnace-mk3", 1},
@@ -45,9 +43,8 @@ create_electric_furnace(beaconed_fe_electric_furnace_2)
 local beaconed_fe_electric_furnace_3 = { 
                                             name = "beaconed-fe-electric-furnace-3",  
                                             crafting_speed = 164.8,
-                                            energy_usage = "14MW",
-                                            energy_drain = "7MW",
-                                            emissions_per_minute = 61.2,
+                                            energy_usage = "16.83MW",
+                                            emissions_per_minute = 15.3,
                                             ingredients =
                                             {
                                                 {"electric-furnace-mk3", 1},

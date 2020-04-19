@@ -11,3 +11,5 @@ Date: 18/04/2020
     - Tuned emissions for all Centrifuges
     - Tuned power consumption for all Chemical Plants
     - Tuned emissions for all Chemical Plants
+    - Tuned power consumption for all Electric Furnaces
+    - Tuned emissions for all Electric Furnaces
