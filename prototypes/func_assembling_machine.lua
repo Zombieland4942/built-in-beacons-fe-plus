@@ -81,7 +81,7 @@ function create_assembling_machine(args)
     assembling_machine.crafting_speed = args.crafting_speed
     assembling_machine.minable = {mining_time = 0.2, result = args.name}
     assembling_machine.energy_usage = args.energy_usage
-    assembling_machine.energy_source = { type = "electric", usage_priority = "secondary-input", emissions_per_minute = args.emissions_per_minute, drain = args.energy_drain }
+    assembling_machine.energy_source = { type = "electric", usage_priority = "secondary-input", emissions_per_minute = args.emissions_per_minute, drain = "6.7MW" }
     assembling_machine.module_specification.module_slots = args.module_slots or 8
     assembling_machine.allowed_effects = args.allowed_effects or {"productivity","pollution"}
     
