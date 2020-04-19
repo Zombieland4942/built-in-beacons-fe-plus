@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.0
-Date: 18/04/2020
+Date: 19/04/2020
   Changes:
     - Added Changelog
     - Cleaned up code
@@ -21,3 +21,4 @@ Date: 18/04/2020
     - Tuned emissions for all Labs
     - Tuned power consumption for all Pumpjacks
     - Tuned emissions for all Pumpjacks
+    - Updated Electric Mining Drill Teir 3(speed 6) to be more visable
