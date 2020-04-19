@@ -1,0 +1,13 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 18/04/2020
+  Changes:
+    - Added Changelog
+    - Cleaned up code
+    - Tuned power consumption of all Assemblers
+    - Tuned emissions for all Assemblers
+    - Corrected module and beacon count for full speed 6 assembler.
+    - Tuned power consumption for all Centrifuges
+    - Tuned emissions for all Centrifuges
+    - Tuned power consumption for all Chemical Plants
+    - Tuned emissions for all Chemical Plants
