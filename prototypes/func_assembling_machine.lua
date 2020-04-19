@@ -78,7 +78,6 @@ function create_assembling_machine(args)
     assembling_machine.icon = "__built-in-beacons-fe-plus__/graphics/icons/" .. args.name .. ".png"
     assembling_machine.icon_size = 64
     assembling_machine.icon_mipmaps = nil
-    assembling_machine.max_health = 500
     assembling_machine.crafting_speed = args.crafting_speed
     assembling_machine.minable = {mining_time = 0.2, result = args.name}
     assembling_machine.energy_usage = args.energy_usage

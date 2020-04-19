@@ -6,11 +6,10 @@ function create_centrifuge(args)
     centrifuge.icon_size = 64
     centrifuge.icon_mipmaps = nil
     centrifuge.minable.result = args.name
-    centrifuge.max_health = 900
     centrifuge.module_specification.module_slots = 8
     centrifuge.crafting_speed = args.crafting_speed
     centrifuge.energy_usage = args.energy_usage
-    centrifuge.energy_source = { type = "electric", usage_priority = "secondary-input", emissions_per_minute = args.emissions_per_minute, drain = args.energy_drain }    
+    centrifuge.energy_source = { type = "electric", usage_priority = "secondary-input", emissions_per_minute = args.emissions_per_minute, drain = "6.7MW" }    
     centrifuge.allowed_effects = {"productivity","pollution"}
     
     if centrifuge.idle_animation then

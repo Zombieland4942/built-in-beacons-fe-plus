@@ -2,8 +2,8 @@
 -- centrifuge                                       c1          c2          c3
 -- module type                                      s4          s5          s6
 -- crafting_speed                                   58.8        87.6        123.6
--- energy_source.emissions_per_minute               40.4        45.2        50
--- energy_usage                                     18MW        19MW        20MW
+-- energy_source.emissions_per_minute               47.55       53.8        60.1
+-- energy_usage                                     13.3MW      15MW        16.8MW
 --
 
 require ("func_centrifuge")
@@ -11,9 +11,8 @@ require ("func_centrifuge")
 local beaconed_fe_centrifuge_1 = { 
                                     name = "beaconed-fe-centrifuge-1",  
                                     crafting_speed = 58.8,
-                                    energy_usage = "18MW",
-                                    energy_drain = "7MW",
-                                    emissions_per_minute = 40.4,
+                                    energy_usage = "13.3MW",                                    
+                                    emissions_per_minute = 47.55,
                                     ingredients =
                                     {
                                         {"centrifuge-mk3", 1},
@@ -28,9 +27,8 @@ create_centrifuge(beaconed_fe_centrifuge_1)
 local beaconed_fe_centrifuge_2 = { 
                                     name = "beaconed-fe-centrifuge-2",  
                                     crafting_speed = 87.6,
-                                    energy_usage = "19MW",
-                                    energy_drain = "7MW",
-                                    emissions_per_minute = 45.2,
+                                    energy_usage = "15MW",                                    
+                                    emissions_per_minute = 53.8,
                                     ingredients =
                                     {
                                         {"centrifuge-mk3", 1},
@@ -45,9 +43,8 @@ create_centrifuge(beaconed_fe_centrifuge_2)
 local beaconed_fe_centrifuge_3 = { 
                                     name = "beaconed-fe-centrifuge-3",  
                                     crafting_speed = 123.6,
-                                    energy_usage = "20MW",
-                                    energy_drain = "7MW",
-                                    emissions_per_minute = 50,
+                                    energy_usage = "16.8MW",                                    
+                                    emissions_per_minute = 60.1,
                                     ingredients =
                                     {
                                         {"centrifuge-mk3", 1},
