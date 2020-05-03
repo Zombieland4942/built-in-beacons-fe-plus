@@ -22,3 +22,9 @@ Date: 19/04/2020
     - Tuned power consumption for all Pumpjacks
     - Tuned emissions for all Pumpjacks
     - Updated Electric Mining Drill Teir 3(speed 6) to be more visable
+---------------------------------------------------------------------------------------------------
+Version: 0.1.1
+Date: 04/05/2020
+  Changes:
+    - Fixed Mimaps issue with Module Icons
+    - Updated mod description
