@@ -18,7 +18,21 @@ local beaconed_fe_assembling_machine_1 = {
                                                 {"assembling-machine-5", 1},
                                                 {"beacon-mk3", 7},
                                                 {"speed-module-4", 14 }
-                                            }
+                                            },
+                                            result = 
+                                            {
+                                                { type = "item", name = "beaconed-fe-assembling-machine-1", amount = 1}
+                                            },
+                                            upgradeable_ingredients = 
+                                            {
+                                                {"assembling-machine-5", 1},
+                                                {"beacon-mk3", 7},
+                                                {"speed-module-4", 14 }
+                                            },
+                                            upgradeable_result = 
+                                            {
+                                                { type = "item", name = "beaconed-fe-assembling-machine-1", amount = 1}
+                                            }                                            
                                          }
 
 create_assembling_machine(beaconed_fe_assembling_machine_1)
@@ -33,7 +47,21 @@ local beaconed_fe_assembling_machine_2 = {
                                                 {"assembling-machine-5", 1},
                                                 {"beacon-mk3", 7},
                                                 {"speed-module-5", 14 }
-                                            }
+                                            },
+                                            result = 
+                                            {
+                                                { type = "item", name = "beaconed-fe-assembling-machine-2", amount = 1}
+                                            },
+                                            upgradeable_ingredients = 
+                                            {
+                                                {"beaconed-fe-assembling-machine-1", 1},
+                                                {"speed-module-5", 14 }
+                                            },
+                                            upgradeable_result = 
+                                            {
+                                                { type = "item", name = "beaconed-fe-assembling-machine-2", amount = 1},
+                                                { type = "item", name = "speed-module-4", amount = 14 }
+                                            }                                            
                                          }
 
 create_assembling_machine(beaconed_fe_assembling_machine_2)
@@ -48,7 +76,21 @@ local beaconed_fe_assembling_machine_3 = {
                                                 {"assembling-machine-5", 1},
                                                 {"beacon-mk3", 7},
                                                 {"speed-module-6", 14 }
-                                            }
+                                            },
+                                            result = 
+                                            {
+                                                { type = "item", name = "beaconed-fe-assembling-machine-3", amount = 1}
+                                            },
+                                            upgradeable_ingredients = 
+                                            {
+                                                {"beaconed-fe-assembling-machine-2", 1},
+                                                {"speed-module-6", 14 }
+                                            },
+                                            upgradeable_result = 
+                                            {
+                                                { type = "item", name = "beaconed-fe-assembling-machine-3", amount = 1},
+                                                { type = "item", name = "speed-module-5", amount = 14 }
+                                            }                                            
                                          }
 
 create_assembling_machine(beaconed_fe_assembling_machine_3)
@@ -65,7 +107,21 @@ local beaconed_fe_assembling_machine_4 = {
                                                 {"assembling-machine-5", 1},
                                                 {"beacon-mk3", 7},
                                                 {"speed-module-6", 18 }
-                                            }
+                                            },
+                                            result = 
+                                            {
+                                                { type = "item", name = "beaconed-fe-assembling-machine-4", amount = 1 }
+                                            },
+                                            upgradeable_ingredients = 
+                                            {
+                                                {"assembling-machine-5", 1},
+                                                {"beacon-mk3", 7},
+                                                {"speed-module-6", 18 }
+                                            },
+                                            upgradeable_result = 
+                                            {
+                                                { type = "item", name = "beaconed-fe-assembling-machine-4", amount = 1 }
+                                            }                                            
                                          }
 
 create_assembling_machine(beaconed_fe_assembling_machine_4)

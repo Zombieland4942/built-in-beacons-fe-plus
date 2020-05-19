@@ -19,7 +19,21 @@ local beaconed_fe_chemical_plant_1 = {
                                             {"beacon-mk3", 7},
                                             {"speed-module-4", 14 }
                                         },
-                                        item_order = "d-b-a"
+                                        item_order = "d-b-a",                                        
+                                        result = 
+                                        {
+                                            { type = "item", name = "beaconed-fe-chemical-plant-1", amount = 1}
+                                        },
+                                        upgradeable_ingredients = 
+                                        {
+                                            {"chemical-plant-mk3", 1},
+                                            {"beacon-mk3", 7},
+                                            {"speed-module-4", 14 }
+                                        },
+                                        upgradeable_result = 
+                                        {
+                                            { type = "item", name = "beaconed-fe-chemical-plant-1", amount = 1}
+                                        } 
                                      }
 
 create_chemical_plant(beaconed_fe_chemical_plant_1)
@@ -35,7 +49,21 @@ local beaconed_fe_chemical_plant_2 = {
                                             {"beacon-mk3", 7},
                                             {"speed-module-5", 14 }
                                         },
-                                        item_order = "d-b-b"
+                                        item_order = "d-b-b",                                        
+                                        result = 
+                                        {
+                                            { type = "item", name = "beaconed-fe-chemical-plant-2", amount = 1}
+                                        },
+                                        upgradeable_ingredients = 
+                                        {
+                                            {"beaconed-fe-chemical-plant-1", 1},
+                                            {"speed-module-5", 14 }
+                                        },
+                                        upgradeable_result = 
+                                        {
+                                            { type = "item", name = "beaconed-fe-chemical-plant-2", amount = 1},
+                                            { type = "item", name = "speed-module-4", amount = 14}
+                                        } 
                                      }
 
 create_chemical_plant(beaconed_fe_chemical_plant_2)
@@ -51,7 +79,21 @@ local beaconed_fe_chemical_plant_3 = {
                                             {"beacon-mk3", 7},
                                             {"speed-module-6", 14 }
                                         },
-                                        item_order = "d-b-c"
+                                        item_order = "d-b-c",                                        
+                                        result = 
+                                        {
+                                            { type = "item", name = "beaconed-fe-chemical-plant-3", amount = 1}
+                                        },
+                                        upgradeable_ingredients = 
+                                        {
+                                            {"beaconed-fe-chemical-plant-2", 1},
+                                            {"speed-module-6", 14 }
+                                        },
+                                        upgradeable_result = 
+                                        {
+                                            { type = "item", name = "beaconed-fe-chemical-plant-3", amount = 1},
+                                            { type = "item", name = "speed-module-5", amount = 14}
+                                        } 
                                      }
 
 create_chemical_plant(beaconed_fe_chemical_plant_3)

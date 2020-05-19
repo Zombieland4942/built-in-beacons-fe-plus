@@ -44,6 +44,16 @@ function create_centrifuge(args)
         centrifuge.animation.layers[3].hr_version.animation_speed = 0.1
     end
 
+    local result,ingredients
+
+    if settings.startup["upgradeable-recipes"].value then
+      ingredients = args.upgradeable_ingredients
+      result = args.upgradeable_result
+    else
+      ingredients = args.ingredients  
+      result = args.result
+    end
+
     data:extend({
         {
             type = "item",
@@ -58,9 +68,13 @@ function create_centrifuge(args)
         {
             type = "recipe",
             name = args.name,
+            icon = centrifuge.icon,
+            icon_size = centrifuge.icon_size,
+            subgroup = "fb-machines",
+            order = args.item_order,
             enabled = false,
-            ingredients = args.ingredients,
-            result = args.name
+            ingredients = ingredients,
+            results = result
         }    
     })
 

@@ -16,6 +16,16 @@ function create_electric_furnace(args)
     furnace.animation.layers[1].filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-electric-furnace/" .. furnace.name .. "/electric-furnace.png"
     furnace.animation.layers[1].hr_version.filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-electric-furnace/" .. furnace.name .. "/hr-electric-furnace.png"
 
+    local result,ingredients
+
+    if settings.startup["upgradeable-recipes"].value then
+      ingredients = args.upgradeable_ingredients
+      result = args.upgradeable_result
+    else
+      ingredients = args.ingredients  
+      result = args.result
+    end
+
     data:extend({
         {
             type = "item",
@@ -30,9 +40,13 @@ function create_electric_furnace(args)
         {
             type = "recipe",
             name = args.name,
+            icon = furnace.icon,
+            icon_size = furnace.icon_size,
+            subgroup = "fb-machines",
+            order = args.item_order,
             enabled = false,
-            ingredients = args.ingredients,
-            result = args.name
+            ingredients = ingredients,
+            results = result
         }
     })
 

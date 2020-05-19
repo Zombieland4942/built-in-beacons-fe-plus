@@ -18,6 +18,16 @@ function create_pumpjack(args)
     pumpjack.animations.north.layers[1].hr_version.filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-pumpjack/" .. args.name .. "/hr-pumpjack-horsehead.png"
     pumpjack.animations.north.layers[1].hr_version.animation_speed = 1
 
+    local result,ingredients
+
+    if settings.startup["upgradeable-recipes"].value then
+      ingredients = args.upgradeable_ingredients
+      result = args.upgradeable_result
+    else
+      ingredients = args.ingredients  
+      result = args.result
+    end
+
     data:extend({
         {
             type = "item",
@@ -32,9 +42,13 @@ function create_pumpjack(args)
         {
             type = "recipe",
             name = args.name,
+            icon = pumpjack.icon,
+            icon_size = pumpjack.icon_size,
+            subgroup = "fb-machines",
+            order = args.item_order,
             enabled = false,
-            ingredients = args.ingredients,
-            result = args.name
+            ingredients = ingredients,
+            results = result
         }    
     })
 

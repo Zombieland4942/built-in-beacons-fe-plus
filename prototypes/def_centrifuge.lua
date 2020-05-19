@@ -19,7 +19,21 @@ local beaconed_fe_centrifuge_1 = {
                                         {"beacon-mk3", 7},
                                         {"speed-module-4", 14 }
                                     },
-                                    item_order = "e-b-a"
+                                    item_order = "e-b-a",                                    
+                                    result = 
+                                    {
+                                        { type = "item", name = "beaconed-fe-centrifuge-1", amount = 1}
+                                    },
+                                    upgradeable_ingredients = 
+                                    {
+                                        {"centrifuge-mk3", 1},
+                                        {"beacon-mk3", 7},
+                                        {"speed-module-4", 14 }
+                                    },
+                                    upgradeable_result = 
+                                    {
+                                        { type = "item", name = "beaconed-fe-centrifuge-1", amount = 1}
+                                    }
                                 }
 
 create_centrifuge(beaconed_fe_centrifuge_1)
@@ -35,7 +49,21 @@ local beaconed_fe_centrifuge_2 = {
                                         {"beacon-mk3", 7},
                                         {"speed-module-5", 14 }
                                     },
-                                    item_order = "e-b-b"
+                                    item_order = "e-b-b",                                    
+                                    result = 
+                                    {
+                                        { type = "item", name = "beaconed-fe-centrifuge-2", amount = 1}
+                                    },
+                                    upgradeable_ingredients = 
+                                    {                                        
+                                        {"beaconed-fe-centrifuge-1", 1},
+                                        {"speed-module-5", 14 }
+                                    },
+                                    upgradeable_result = 
+                                    {
+                                        { type = "item", name = "beaconed-fe-centrifuge-2", amount = 1},
+                                        { type = "item", name = "speed-module-4", amount = 14}
+                                    }
                                 }
 
 create_centrifuge(beaconed_fe_centrifuge_2)
@@ -51,7 +79,21 @@ local beaconed_fe_centrifuge_3 = {
                                         {"beacon-mk3", 7},
                                         {"speed-module-6", 14 }
                                     },
-                                    item_order = "e-b-c"
+                                    item_order = "e-b-c",                                    
+                                    result = 
+                                    {
+                                        { type = "item", name = "beaconed-fe-centrifuge-3", amount = 1}
+                                    },
+                                    upgradeable_ingredients = 
+                                    {
+                                        {"beaconed-fe-centrifuge-2", 1},
+                                        {"speed-module-6", 14 }
+                                    },
+                                    upgradeable_result = 
+                                    {
+                                        { type = "item", name = "beaconed-fe-centrifuge-3", amount = 1},                                        
+                                        { type = "item", name = "speed-module-5", amount = 14}
+                                    }
                                 }
 
 create_centrifuge(beaconed_fe_centrifuge_3)

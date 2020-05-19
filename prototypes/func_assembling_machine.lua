@@ -112,6 +112,16 @@ function create_assembling_machine(args)
       }        
     })
     
+    local result,ingredients
+
+    if settings.startup["upgradeable-recipes"].value then
+      ingredients = args.upgradeable_ingredients
+      result = args.upgradeable_result
+    else
+      ingredients = args.ingredients  
+      result = args.result
+    end
+
     data:extend({
         {
             type = "item",
@@ -126,9 +136,13 @@ function create_assembling_machine(args)
         {
             type = "recipe",
             name = args.name,
+            icon = assembling_machine.icon,
+            icon_size = assembling_machine.icon_size,
+            subgroup = "fb-machines",
+            order = "b-b-1",
             enabled = false,
-            ingredients = args.ingredients,
-            result = args.name
+            ingredients = ingredients,
+            results = result
         }
     })
 

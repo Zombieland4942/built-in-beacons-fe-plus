@@ -17,6 +17,16 @@ function create_refinery(args)
         refinery.animation[direction].layers[1].hr_version.filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-oil-refinery/" .. args.name .. "/hr-oil-refinery.png"
     end
 
+    local result,ingredients
+
+    if settings.startup["upgradeable-recipes"].value then
+      ingredients = args.upgradeable_ingredients
+      result = args.upgradeable_result
+    else
+      ingredients = args.ingredients  
+      result = args.result
+    end
+
     data:extend({
         {
             type = "item",
@@ -31,9 +41,13 @@ function create_refinery(args)
         {
             type = "recipe",
             name = args.name,
+            icon = refinery.icon,
+            icon_size = refinery.icon_size,
+            subgroup = "fb-fluids",
+            order = args.item_order,
             enabled = false,
-            ingredients = args.ingredients,
-            result = args.name
+            ingredients = ingredients,
+            results = result
         }    
     })
 

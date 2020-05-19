@@ -18,6 +18,16 @@ function create_lab(args)
     lab.off_animation.layers[1].filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-lab/" .. args.name .. "/lab.png"
     lab.off_animation.layers[1].hr_version.filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-lab/" .. args.name .. "/hr-lab.png"
     
+    local result,ingredients
+
+    if settings.startup["upgradeable-recipes"].value then
+      ingredients = args.upgradeable_ingredients
+      result = args.upgradeable_result
+    else
+      ingredients = args.ingredients  
+      result = args.result
+    end
+
     data:extend({
         {
             type = "item",
@@ -32,9 +42,13 @@ function create_lab(args)
         {
             type = "recipe",
             name = args.name,
+            icon = lab.icon,
+            icon_size = lab.icon_size,
+            subgroup = "fb-machines",
+            order = args.item_order,
             enabled = false,
-            ingredients = args.ingredients,
-            result = args.name
+            ingredients = ingredients,
+            results = result
         }      
     })
 

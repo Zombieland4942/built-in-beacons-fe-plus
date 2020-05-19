@@ -25,6 +25,16 @@ function create_electric_mining_drill(args)
         mining_drill.input_fluid_patch_sprites[direction].hr_version.filename = "__built-in-beacons-fe-plus__/graphics/entity/beaconed-fe-electric-mining-drill/" .. mining_drill.name .. "/hr-electric-mining-drill-" .. short .. "-patch.png"
     end
 
+    local result,ingredients
+
+    if settings.startup["upgradeable-recipes"].value then
+      ingredients = args.upgradeable_ingredients
+      result = args.upgradeable_result
+    else
+      ingredients = args.ingredients  
+      result = args.result
+    end
+
     data:extend({
         {
             type = "item",
@@ -39,9 +49,13 @@ function create_electric_mining_drill(args)
         {
             type = "recipe",
             name = args.name,
+            icon = mining_drill.icon,
+            icon_size = mining_drill.icon_size,
+            subgroup = "fb-machines",
+            order = args.item_order,
             enabled = false,
-            ingredients = args.ingredients,
-            result = args.name
+            ingredients = ingredients,
+            results = result
         }        
     })
 
