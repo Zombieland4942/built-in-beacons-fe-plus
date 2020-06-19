@@ -33,3 +33,9 @@ Version: 0.1.2
 Date: 2020-05-19
   Changes:
     - Added Mod setting to switch recipes over to upgradeable recipes.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.3
+Date: 2020-06-19
+  Changes:
+    - Removed Custom Graphics from Electric Miners. 
+    - Temp fix to get the mod working in 0.18.32

@@ -1,14 +1,14 @@
 {
     "name": "built-in-beacons-fe-plus",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "title": "Built in Beacons for FE Plus",
     "author": "zombieland4942",
     "contact": "",
     "homepage": "",
     "factorio_version": "0.18",
     "dependencies": [
-        "base >= 0.18",
-        "FactorioExtended-Plus-Machines >= 0.4.3",
+        "base >= 0.18.32",
+        "FactorioExtended-Plus-Machines >= 0.4.4",
         "FactorioExtended-Plus-Module >= 0.1.6"
     ],
     "description": "This mod is similar to Built in Beacons except its created using MK3 Beacons and the Highest FE-Plus Machines. Works best when combined with other stacking mods, as well as fluid compressions mods."
