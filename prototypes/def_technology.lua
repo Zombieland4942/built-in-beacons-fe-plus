@@ -29,7 +29,7 @@ data:extend({
             },
             time = 30
         },
-        prerequisites = {"effect-transmission-3", "speed-module-4", "mechanical-engineer-2"}        
+        prerequisites = {"effect-transmission-mk3", "speed-module-4", "mechanical-engineer-2"}        
     },
     {
         type = "technology",
@@ -59,7 +59,7 @@ data:extend({
             },
             time = 30
         },
-        prerequisites = {"effect-transmission-3", "speed-module-5", "tech-fullspeed-fe-productivity-module-1"}        
+        prerequisites = {"effect-transmission-mk3", "speed-module-5", "tech-fullspeed-fe-productivity-module-1"}        
     },
     {
         type = "technology",
@@ -90,6 +90,6 @@ data:extend({
             },
             time = 30
         },
-        prerequisites = {"effect-transmission-3", "speed-module-6", "tech-fullspeed-fe-productivity-module-2"}        
+        prerequisites = {"effect-transmission-mk3", "speed-module-6", "tech-fullspeed-fe-productivity-module-2"}        
     }
 })
